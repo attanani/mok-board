@@ -1,85 +1,113 @@
 <div id="view-wrapper">
 	<header>
-		<div>header</div>
+		<div id="head-wrap">
+			<div id="head-navi">
+				<span>a</span><span> | </span><span>b</span><span> | </span><span>posting</span>
+				
+			</div>
+		</div>
 	</header>
 	
-	<div id="main-box">
+	<div id="write-box">
 		<div class="content-wrap">
-			<div class="img-box"><img src="client/img/audi_tt.png" alt="uinna"></div>
-			<div class="text-box"><div>안녕하세요.<br>Audi TTS</div></div>
-			<div><ul id="lvContent" data-role="listview">
-				<li>
+		<div id="write-option">
+			사진 | 동영상 | 투표
+		</div>
+		<div id="write-text-wrap">
+			<input type="hidden">
+			<div class="innerTextWrap">
+				<textarea></textarea>
+			</div>
+
+		</div>
+		<input type="button" value="write" onclick="articleWrite();">
+		</div>
+	</div>
+	
+	
+	<section>
+	<div class="main-box">
+		<div class="content-wrap">
+			<div class="author-wrap">
+				<div class="uiCommentWrap uiauthor-box">
+					<div class="clearFloat">
+						<!-- 사진 -->
+						<div class="leftFloat">
+							<a>
+								<img class="imgs cardImg" src="client/img/wesh.png" alt="img">
+							</a>
+						</div>
 					
-				</li>
-			</ul></div>
+						<!-- 댓글 -->
+						<div>
+							<div>
+								<div class="commentBox">
+									<div>
+										<span class="cName">이정만</span>
+									</div>
+									<div class="uci">
+										<span>1분전</span><span> </span><span>모바일에서</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-box">
+				<div>안녕하세요.<br>Audi TTS</div>
+			</div>
+			<div class="img-box">
+				<img src="client/img/audi_tt.png" alt="uinna">
+			</div>
+
+			<div>
+				<ul id="lvContent" data-role="listview">
+					<li>
+					
+					</li>
+				</ul>
+			</div>
 			
 			<div>
 				<ul class="commentRowUi">
 					<li class="commentRowLi">
 						<div class="uiCommentWrap">
-						<div class="clearFloat">
+							<div class="clearFloat">
 							<!-- 사진 -->
-							<div class="leftFloat">
-								<a>
-									<img class="imgs cardImg" src="client/img/wesh.png" alt="img">
-								</a>
-							</div>
-						
-							<!-- 댓글 -->
-							<div>
+								<div class="leftFloat">
+									<a>
+										<img class="imgs cardImg" src="client/img/wesh.png" alt="img">
+									</a>
+								</div>
+							
+								<!-- 댓글 -->
 								<div>
-									<div class="commentBox">
-										<div>
-											<span class="cName">이정만</span><span> </span><span class="cComment">Hello!! 안녕하세요!!</span>
-										</div>
-										<div class="uci">
-											<span>1분전</span><span> </span><span>모바일에서</span>
+									<div>
+										<div class="commentBox">
+											<div>
+												<span class="cName">이정만</span><span> </span><span class="cComment">Hello!! 안녕하세요!!</span>
+											</div>
+											<div class="uci">
+												<span>1분전</span><span> </span><span>모바일에서</span>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						</div>
-					</li>
-					
-					<li class="commentRowLi">
-						<div class="uiCommentWrap">
-						<div class="clearFloat">
-							<!-- 사진 -->
-							<div class="leftFloat">
-								<a>
-									<img class="imgs cardImg" src="client/img/wesh.png" alt="img">
-								</a>
-							</div>
-						
-							<!-- 댓글 -->
-							<div>
-								<div>
-									<div class="commentBox">
-										<div>
-											<span class="cName">이정만</span><span> </span><span class="cComment">Hello!! 안녕하세요!!</span>
-										</div>
-										<div class="uci">
-											<span>1분전</span><span> </span><span>모바일에서</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 						</div>
 					</li>
 				</ul>
 				
 				<div class="clearFloat commentRowLi uiCommentWrap">
-							<div class="rightFloat commentSendBtn">
-								Ent.
-							</div>
-							<div class="textWrap">
-								<div class="innerTextWrap">
-									<textarea></textarea>
-								</div>
-							</div>
+					<div class="rightFloat commentSendBtn"></div>
+					<div class="textWrap">
+						<input type="hidden" name="hiddeninput" autocomplete="off" class="hiddenInput" value="">
+						<div class="innerTextWrap">
+							<textarea></textarea>
 						</div>
+					</div>
+				</div>
 						
 						
 			</div>
@@ -89,12 +117,123 @@
 
 		</div>
 		
-		<div class="more-box">more</div>
+		
+	</div>
+	<!-- main box 끗 -->
+	
+	
+	<!-- main box -->
+	
+	<div class="main-box">
+		<div class="content-wrap">
+			<div class="author-wrap">
+				<div class="uiCommentWrap uiauthor-box">
+					<div class="clearFloat">
+						<!-- 사진 -->
+						<div class="leftFloat">
+							<a>
+								<img class="imgs cardImg" src="client/img/wesh.png" alt="img">
+							</a>
+						</div>
+					
+						<!-- 댓글 -->
+						<div>
+							<div>
+								<div class="commentBox">
+									<div>
+										<span class="cName">이정만</span>
+									</div>
+									<div class="uci">
+										<span>1분전</span><span> </span><span>모바일에서</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-box">
+				<div>안녕하세요.<br>Audi TTS</div>
+			</div>
+			<div class="img-box">
+				<img src="client/img/audi_tt.png" alt="uinna">
+			</div>
+
+			<div>
+				<ul id="lvContent" data-role="listview">
+					<li>
+					
+					</li>
+				</ul>
+			</div>
+			
+			<div>
+				<ul class="commentRowUi">
+					<li class="commentRowLi">
+						<div class="uiCommentWrap">
+							<div class="clearFloat">
+							<!-- 사진 -->
+								<div class="leftFloat">
+									<a>
+										<img class="imgs cardImg" src="client/img/wesh.png" alt="img">
+									</a>
+								</div>
+							
+								<!-- 댓글 -->
+								<div>
+									<div>
+										<div class="commentBox">
+											<div>
+												<span class="cName">이정만</span><span> </span><span class="cComment">Hello!! 안녕하세요!!</span>
+											</div>
+											<div class="uci">
+												<span>1분전</span><span> </span><span>모바일에서</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				
+				<div class="clearFloat commentRowLi uiCommentWrap">
+					<div class="rightFloat commentSendBtn"></div>
+					<div class="textWrap">
+						<input type="hidden" name="hiddeninput" autocomplete="off" class="hiddenInput" value="">
+						<div class="innerTextWrap">
+							<textarea></textarea>
+						</div>
+					</div>
+				</div>
+						
+						
+			</div>
+			
+			
+			
+
+		</div>
+		
+		
 	</div>
 	
+	<!-- main box -->
+	</section>
+	
+	
+	
 	<footer>
-		<p>
+		
+		<div id="footer-wrap">
+		<h1>The Rest</h1>
+		<p>To stay up-to-date on all things Nearly Impossible, you can <a href="http://eepurl.com/CkfNT">subscribe to our newsletter here</a>.</p>
+		<p>A special thanks to all of the people who have lent their time &amp; talent to help make this event possible. The following people have been great supporters from the start: <a href="https://twitter.com/laurenoneill">Lauren O'Neill</a>, <a href="https://twitter.com/swissmiss">Tina Roth Eisenberg</a>, <a href="https://twitter.com/hfizzle">Harley Finkelstein</a>, <a href="https://twitter.com/rachelshechtman">Rachel Shechtman</a>, <a href="https://twitter.com/amol">Amol Sarva</a>,  <a href="https://twitter.com/mfortress">Mike Fortress</a>, and <a href="https://twitter.com/sawyerh">Sawyer Hollenshead</a>.</p>
+		<p>Nearly impossible is run by <a href="http://rusty.am/">Rusty Meadows</a>. If you have any questions about the event, please email us at <a href="mailto:hello@nearlyimpossible.org">hello@nearlyimpossible.org</a>. All information and imagery on this site is © Nearly Impossible 2013.</p>
+				<p>
 			&copy; Copyright  by mok.com
 		</p>
+	</div>
+
 	</footer>
 </div>

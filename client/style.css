@@ -7,8 +7,15 @@ body {
 	width:100%;
 padding:0;
 margin:0;
+
 background-color: #6fb1c7;
 }
+header{margin-bottom:30px;}
+header #head-wrap{height:50px;background:#145072;}
+#head-navi{margin:0 auto; width:100px;color:#fff;font-size:1.28em;padding:15px 15px;}
+
+footer{width:100%; background:#145072;padding:0; margin:0;margin-top:50px;}
+footer #footer-wrap{margin:0 auto; width:50%;color:#fff;font-size:1.28em;padding:15px 15px;}
 img{width:100%;display: block}
 ul, li{list-style-type: none; margin:0; padding:0;}
 li{display:list-item;}
@@ -23,21 +30,33 @@ text-indent: 0px;
 text-shadow: none;
 
 }
+
+#write-box{width:50%;
+	
+	margin:0 auto;
+	background-color: #fff;;}
+
+
 .textWrap{padding-right:35px;}
 .innerTextWrap{border:solid 1px #aaa;line-height:1.28em;}
 #view-wrapper{width:100%; overflow: hidden; height:auto;}
-
-#main-box{
+#write-box textarea{height:40px;}
+.main-box, #write-box{
+	border-radius: 5px;
+	-webkit-box-shadow: 0 3px 37px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 	width:50%;
 	
-	margin:0 auto;
+	margin:20px auto;
 	background-color: #fff;;
 }
+.text-box{padding:5px 0;}
 .content-wrap{padding:10px;}
 .img-box{
-	
+	margin:10px 0;
 }
-.more-box{background-color:#fbf2b2}
+.more-box{margin-top:5px;border-top:1px solid #666;;color:#333;font-size:1.5em;padding:10px 0;}
 .uiCommentWrap{padding:4px; background-color:#e1e1e1;}
 .commentRowLi{margin-top:1px;}
 .cardImg{width:32px;}
@@ -47,11 +66,17 @@ text-shadow: none;
 .commentBox{padding-left:40px;}
 .cName{font-weight:bold; color:#3b5998;}
 .uci{padding-top:3px; color:#666;}
-
+#btn-more-wrap{margin:0 auto;width:40px;}
+.uiauthor-box{background:#fff;border-bottom:1px solid #ccc;padding:10px 0;}
+.author-wrap .cardImg{width:40px;}
+.author-wrap .commentBox{padding-left:50px; padding-top:5px;}
+#write-text-wrap{}
 @media screen and (max-width:1000px){
 	#main-box{
 	width:100%;
 }
+
+
 	
 	
 	

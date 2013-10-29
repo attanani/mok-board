@@ -24,8 +24,10 @@ var mongoUrl = process.env.MONGOHQ_URL || "127.0.0.1:27017/takudb";
 var db = mongo.db(mongoUrl);
 var server = require("./server/server.js");
 
-	
-
+io.configure(function () { 
+    io.set("transports", ["xhr-polling"]); 
+    io.set("polling duration", 10); 
+});
 
 // 셋팅
 //app.use("/public", express["static"](__dirname + "/public"));
